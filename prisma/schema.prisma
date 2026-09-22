@@ -8,6 +8,7 @@ datasource db {
   provider     = "postgresql"
   relationMode = "prisma"
 }
+
 model User {
   id                String    @id() @map("user_id") @db.Uuid
   username          String    @unique @db.VarChar(255)
